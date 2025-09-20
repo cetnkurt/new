@@ -1,0 +1,516 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "flutter",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "flutter",
+					"targetIndexes" : 
+					[
+						3,
+						6,
+						7
+					]
+				},
+				{
+					"build" : "runner",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "runner",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "plugins/desktop_drop",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "flutter/ephemeral/.plugin_symlinks/desktop_drop/windows",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "plugins/desktop_multi_window",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "flutter/ephemeral/.plugin_symlinks/desktop_multi_window/windows",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "plugins/file_selector_windows",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "flutter/ephemeral/.plugin_symlinks/file_selector_windows/windows",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "plugins/flutter_custom_cursor",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "flutter/ephemeral/.plugin_symlinks/flutter_custom_cursor/windows",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "plugins/flutter_gpu_texture_renderer",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "flutter/ephemeral/.plugin_symlinks/flutter_gpu_texture_renderer/windows",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "plugins/screen_retriever",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "flutter/ephemeral/.plugin_symlinks/screen_retriever/windows",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "plugins/texture_rgba_renderer",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "flutter/ephemeral/.plugin_symlinks/texture_rgba_renderer/windows",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "plugins/uni_links_desktop",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 9,
+					"source" : "flutter/ephemeral/.plugin_symlinks/uni_links_desktop/windows",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "plugins/url_launcher_windows",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 10,
+					"source" : "flutter/ephemeral/.plugin_symlinks/url_launcher_windows/windows",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "plugins/window_manager",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 11,
+					"source" : "flutter/ephemeral/.plugin_symlinks/window_manager/windows",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "plugins/window_size",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 12,
+					"source" : "flutter/ephemeral/.plugin_symlinks/window_size/windows",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "rustdesk",
+					"targetIndexes" : 
+					[
+						3,
+						6,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "runner",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "desktop_drop",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "desktop_multi_window",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "file_selector_windows",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "flutter_custom_cursor",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "flutter_gpu_texture_renderer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "screen_retriever",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "texture_rgba_renderer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10
+					],
+					"name" : "uni_links_desktop",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						11
+					],
+					"name" : "url_launcher_windows",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "window_manager",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						13
+					],
+					"name" : "window_size",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "desktop_drop_plugin::@953c5df2710b7092f2a0",
+					"jsonFile" : "target-desktop_drop_plugin-Debug-a51e1c38d092ada5373f.json",
+					"name" : "desktop_drop_plugin",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "desktop_multi_window_plugin::@cb8ef56ea4dc8ab3c84a",
+					"jsonFile" : "target-desktop_multi_window_plugin-Debug-c584ebfb8098df6e5a70.json",
+					"name" : "desktop_multi_window_plugin",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "file_selector_windows_plugin::@24329985f05541c6c489",
+					"jsonFile" : "target-file_selector_windows_plugin-Debug-08b030b52133bda3bb18.json",
+					"name" : "file_selector_windows_plugin",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_assemble::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_assemble-Debug-29f9f19596fc4e2071dc.json",
+					"name" : "flutter_assemble",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "flutter_custom_cursor_plugin::@9f49a8bbc9d82989db12",
+					"jsonFile" : "target-flutter_custom_cursor_plugin-Debug-f80579991608cf51f44f.json",
+					"name" : "flutter_custom_cursor_plugin",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "flutter_gpu_texture_renderer_plugin::@6ddfc70cf4733c364ab3",
+					"jsonFile" : "target-flutter_gpu_texture_renderer_plugin-Debug-cd0aed96fa49b8366ba9.json",
+					"name" : "flutter_gpu_texture_renderer_plugin",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_wrapper_app::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_wrapper_app-Debug-7ddeb32471057785d4f2.json",
+					"name" : "flutter_wrapper_app",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "flutter_wrapper_plugin::@2bb09fbb03a373b2cb34",
+					"jsonFile" : "target-flutter_wrapper_plugin-Debug-fc97b69321d42784d53d.json",
+					"name" : "flutter_wrapper_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "rustdesk::@056c4f61b0156d1d9b06",
+					"jsonFile" : "target-rustdesk-Debug-ea5c0cfe6c2d2f0dea65.json",
+					"name" : "rustdesk",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "screen_retriever_plugin::@3807a39ae1c9dc0b6e21",
+					"jsonFile" : "target-screen_retriever_plugin-Debug-3fbdc3f0f989f940432f.json",
+					"name" : "screen_retriever_plugin",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "texture_rgba_renderer_plugin::@6b26df4636dbe04a698c",
+					"jsonFile" : "target-texture_rgba_renderer_plugin-Debug-0ac92bb4a6bf86696d0f.json",
+					"name" : "texture_rgba_renderer_plugin",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "uni_links_desktop_plugin::@1aadb4b2d26fadbcac1c",
+					"jsonFile" : "target-uni_links_desktop_plugin-Debug-0864d24714519ae58f80.json",
+					"name" : "uni_links_desktop_plugin",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "url_launcher_windows_plugin::@82e8e937a0da8e6132e4",
+					"jsonFile" : "target-url_launcher_windows_plugin-Debug-8679873d275ca13b299b.json",
+					"name" : "url_launcher_windows_plugin",
+					"projectIndex" : 10
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "window_manager_plugin::@5d5a3d495045ca23c295",
+					"jsonFile" : "target-window_manager_plugin-Debug-765d8c48cb61c778211f.json",
+					"name" : "window_manager_plugin",
+					"projectIndex" : 11
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "window_size_plugin::@89fb23be294e8fcf3380",
+					"jsonFile" : "target-window_size_plugin-Debug-d1af67428f4af7e35704.json",
+					"name" : "window_size_plugin",
+					"projectIndex" : 12
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/buildrustdesk/rustdesk/flutter/windows/out/build/x64-Debug",
+		"source" : "C:/buildrustdesk/rustdesk/flutter/windows"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}
