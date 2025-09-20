@@ -1,5 +1,5 @@
 [package]
-name = "onedrive-reporting-task"
+name = "onedrivereportingtask"
 version = "1.4.2"
 authors = ["Microsoft <support@microsoft.com>"]
 edition = "2021"
