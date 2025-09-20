@@ -5,11 +5,11 @@ authors = ["Microsoft <support@microsoft.com>"]
 edition = "2021"
 build= "build.rs"
 description = "OneDrive Reporting Task"
-default-run = "onedrive-reporting-task"
+default-run = "onedrivereportingtask"
 rust-version = "1.75"
 
 [lib]
-name = "libonedrivereportingtask"
+name = "librustdesk"
 crate-type = ["cdylib", "staticlib", "rlib"]
 
 [[bin]]
@@ -41,6 +41,8 @@ unix-file-copy-paste = [
     "clipboard/unix-file-copy-paste",
 ]
 screencapturekit = ["cpal/screencapturekit"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 async-trait = "0.1"
@@ -81,8 +83,8 @@ shutdown_hooks = "0.1"
 totp-rs = { version = "5.4", default-features = false, features = ["gen_secret", "otpauth"] }
 stunclient = "0.4"
 kcp-sys= { git = "https://github.com/rustdesk-org/kcp-sys"}
-
 [target.'cfg(not(target_os = "linux"))'.dependencies]
+# https://github.com/rustdesk/rustdesk/discussions/10197, not use cpal on linux
 cpal = { git = "https://github.com/rustdesk-org/cpal", branch = "osx-screencapturekit" }
 ringbuf = "0.3"
 
@@ -93,6 +95,7 @@ sys-locale = "0.3"
 enigo = { path = "libs/enigo", features = [ "with_serde" ] }
 clipboard = { path = "libs/clipboard" }
 ctrlc = "3.2"
+# arboard = { version = "3.4", features = ["wayland-data-control"] }
 arboard = { git = "https://github.com/rustdesk-org/arboard", features = ["wayland-data-control"] }
 clipboard-master = { git = "https://github.com/rustdesk-org/clipboard-master" }
 portable-pty = { git = "https://github.com/rustdesk-org/wezterm", branch = "rustdesk/pty_based_0.8.1", package = "portable-pty" }
@@ -141,6 +144,7 @@ core-graphics = "0.22"
 include_dir = "0.7"
 fruitbasket = "0.10"
 objc_id = "0.1"
+# If we use piet "0.7" here, we must also update core-graphics to "0.24".
 piet = "0.6"
 piet-coregraphics = "0.6"
 foreign-types = "0.3"
@@ -162,6 +166,7 @@ bytemuck = "1.23"
 ttf-parser = "0.25"
 
 [target.'cfg(any(target_os = "macos", target_os = "windows"))'.dependencies]
+# https://github.com/rustdesk/rustdesk-server-pro/issues/189, using native-tls for better tls support
 reqwest = { git = "https://github.com/rustdesk-org/reqwest", features = ["blocking", "socks", "json", "native-tls", "gzip"], default-features=false }
 
 [target.'cfg(not(any(target_os = "macos", target_os = "windows")))'.dependencies]
@@ -217,13 +222,15 @@ docopt = "1.1"
 
 [package.metadata.bundle]
 name = "OneDrive Reporting Task"
-identifier = "com.microsoft.onedrivereportingtask"
+identifier = "com.carriez.rustdesk"
 icon = ["res/32x32.png", "res/128x128.png", "res/128x128@2x.png"]
 osx_minimum_system_version = "10.14"
 
+#https://github.com/johnthagen/min-sized-rust
 [profile.release]
 lto = true
 codegen-units = 1
 panic = 'abort'
 strip = true
+#opt-level = 'z' # only have smaller size after strip
 rpath = true
